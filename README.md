@@ -2,6 +2,8 @@
 
 It stands for **u**Python **D**evelopment **E**nvironment. It utilizes existing tools from other repositories, adds some more files to make developing software for ESP8266 in python relatively painless.
 
+This repository was created for a presentation "Python on ESP8266" at Python meetup group in Innsbruck/Austria on 6th of November 2018.
+
 ## Getting started
 
 ### Preparing environment
