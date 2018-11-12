@@ -8,7 +8,7 @@ Use 'upload.sh` for uploading either applications or ude files or a single files
 
 Use can use it like so:
 
-'''
+```
 >>> import ude.network
 
 >>> w = ude.network.Wifi()
@@ -50,14 +50,14 @@ status: got IP
 DONE (finished in 6185 ms)
 ('10.201.111.52', '255.255.255.0', '10.201.111.1', '195.34.133.21')
 
-'''
+```
 
 ## ude.apps
 
 This is used from `main.py` to scan for installed applications and allow user (interactively) to select one to run.
 This was made for the presentation only - not for production.
 
-'''
+```
 >>> import ude.apps
 
 >>> ude.apps.main()
@@ -73,28 +73,28 @@ To make an app automatically started - save its name to default_app.txt
 To turn off automatic start of an app - remove default_app.txt
 Select application (by number) to run or 0 to skip:
 Your choice >
-'''
+```
 
 An application should have `main()` which gets executed. It may optionally have `finish()` which gets executed when user
 presses `CTRL-C`.
 
 You may want to set some app to start automatically:
-'''
+```
 >>> ude.apps.set_default('app_pwm_timer.py')
 Default app saved
-'''
+```
 
 Next time the `ude.apps.main()` gets called - it will executed what was set as default.
 To clear the default use
-'''
+```
 >>> ude.apps.remove_default()
 Default app starting - removed
-'''
+```
 
 ## ude.utils
 
 Examples:
-'''
+```
 >>> import time
 >>> import ude.utils
 >>> time.localtime()
@@ -102,6 +102,6 @@ Examples:
 >>> ude.utils.set_ntp_time(3600) # timezone offset given in seconds - if not given it is 0 and then localtime will be in UTC
 >>> time.localtime()
 (2018, 11, 12, 11, 37, 7, 0, 316)
-'''
+```
 
 
