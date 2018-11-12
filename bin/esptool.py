@@ -1,0 +1,1 @@
+../externals/esptool/esptool.py

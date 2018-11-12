@@ -1,0 +1,18 @@
+[submodule "externals/esptool"]
+	path = externals/esptool
+	url = https://github.com/espressif/esptool
+[submodule "externals/micropython"]
+	path = externals/micropython
+	url = https://github.com/micropython/micropython.git
+[submodule "externals/micropython-lib"]
+	path = externals/micropython-lib
+	url = https://github.com/micropython/micropython-lib.git
+[submodule "externals/micropython-dflib"]
+	path = externals/micropython-dflib
+	url = https://github.com/DFRobot/micropython-dflib.git
+[submodule "externals/mpfshell"]
+	path = externals/mpfshell
+	url = https://github.com/wendlers/mpfshell.git
+[submodule "externals/esp-open-sdk"]
+	path = externals/esp-open-sdk
+	url = https://github.com/pfalcon/esp-open-sdk
