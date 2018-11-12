@@ -112,8 +112,8 @@ class Wifi:
         if cfg_ap:
             print("Configured access point {}".format(cfg_ap["name"]))
             try:
-                self.ap_if.config(essid=cfg_ap["name"], authmode=network.AUTH_WPA_WPA2_PSK, password=cfg_ap["password"])
                 self.ap_if.active(True)
+                self.ap_if.config(essid=cfg_ap["name"], authmode=network.AUTH_WPA_WPA2_PSK, password=cfg_ap["password"])
             except:
                 print("Configuring AP failed - maybe password is too short")
                 self.ap_if.active(False)
